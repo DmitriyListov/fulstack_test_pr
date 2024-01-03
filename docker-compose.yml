@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: Dmitriy_L
+      POSTGRES_PASSWORD: bobmarley
+      POSTGRES_DB: postgres_test_db
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    command: ["./wait-for-connection.sh", "postgres", "5432", "--", "npm", "start"]
+    volumes:
+      - ./wait-for-connection.sh:/app/wait-for-connection.sh

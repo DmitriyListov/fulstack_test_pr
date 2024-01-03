@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.input__data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 500px;
+    margin: 0 32px;
+}
+
+.container__input {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 32px;
+}
+
+.container__input span{
+
+}
+
+.container__input input{
+    width: 100%;
+    height: 35px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+    background: #4361ee;
+    color: #e3e3e3;
+    transition: all .2s linear;
+}
+
+.btn:hover {
+    background: #4cc9f0;
+    border-radius: 7px;
+    color: #646464;
+}
+
+.output__data-container {
+    margin: 0 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.output__data-container .data-container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.result__data-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.request__data-container,
+.response__data-container{
+    width: 20%;
+}
+.result__data-container{
+    flex: 1;
+}
+.table .table__header{
+    margin-bottom: 16px;
+}
+.result__data-container .table{
+    width: 100%;
+}
+.result__data-container .table .head{
+    margin-bottom: 16px;
+}
+.result__data-container .table .head span{
+    width: 30%;
+}
+.result__data-container .table li{
+    width: 30%;
+}
+
+result__data-container .table .content .id{
+    padding-left: 10px;
+}
+
+h4 {
+    width: max-content;
+    padding: 10px;
+}
+
+pre {
+    color: #8a8a8a;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+    color: #8a8a8a;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+table th {
+    text-align: justify;
+}
+
+table tr td:nth-child(1){
+    width: 20%;
+}
+table tr td:nth-child(2){
+    width: 40%;
+}
+table tr td:nth-child(3){
+    width: 40%;
+}
+
+
+.head {
+    display: flex;
+    gap: 12px;
+}
+
+.content {
+    background: #f2f2f2;
+}
+
+.content ul {
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.content ul div {
+    display: flex;
+    gap: 12px;
+}

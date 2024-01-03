@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="input__data-container">
+        <h3>Input data</h3>
+        <div class="container__input">
+            <span>Input Data:</span>
+            <input type="text" id="inputDataName" name="inputDataName" required placeholder="Name">
+            <input type="text" id="inputDataLastName" name="inputDataLastName" required placeholder="Last name">
+        </div>
+        <div class="btn">Submit</div>
+    </div>
+    <div class="output__data-container">
+        <h3>Output data</h3>
+        <div class="data-container">
+            <div class="request__data-container">
+                <h4>Request data</h4>
+                <pre></pre>
+            </div>
+            <div class="response__data-container">
+                <h4>Response data</h4>
+                <pre></pre>
+            </div>
+            <div class="result__data-container">
+                <h4>Table result</h4>
+                <div class="table">
+                    <table>
+                        <tr class="table__header">
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>LAST NAME</th>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
