@@ -3,11 +3,13 @@
 1. Run Docker app on your pc;
 2. Open project in terminal and run command:
     
->docker-compose up --build
+>npm run docker:up
 
     Docker will installed all dependencies from
 
-3.Project will start on `localhost:3000`
+3. Project will start on `localhost:3000`;
+4. For stop the project run command:
+>npm run docker:down
 
 
 # Basic commands
