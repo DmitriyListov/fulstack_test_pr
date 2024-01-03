@@ -5,7 +5,7 @@
     
 >npm run docker:up
 
-    Docker will installed all dependencies from
+    Docker will installed all dependencies from package.json
 
 3. Project will start on `localhost:3000`;
 4. For stop the project run command:
