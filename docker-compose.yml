@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   postgres:
@@ -14,8 +14,13 @@ services:
     build: .
     ports:
       - "3000:3000"
+
     depends_on:
       - postgres
     command: ["./wait-for-connection.sh", "postgres", "5432", "--", "npm", "start"]
+#    command: ["./wait-for-connection.sh", "postgres", "5432", "--", "npm", "run", "dev"]
     volumes:
+      - type: bind
+        source: .
+        target: /app
       - ./wait-for-connection.sh:/app/wait-for-connection.sh

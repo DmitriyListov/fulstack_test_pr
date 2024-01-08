@@ -19,6 +19,11 @@ app.use(express.static('public'));
 
 app.use(express.json());
 
+// app.get('/echo',(req,res)=>{
+//     res.send( '123123132')
+//     console.log(res.body)
+// });
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../src/index.html'));
 });

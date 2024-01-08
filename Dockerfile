@@ -15,3 +15,4 @@ COPY . .
 EXPOSE 3000
 
 CMD ["./wait-for-connection.sh", "postgres:5432", "--", "npm", "start"]
+#CMD ["./wait-for-connection.sh", "postgres:5432", "--", "npm", "run", "dev"]
